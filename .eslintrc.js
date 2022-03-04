@@ -7,12 +7,19 @@ module.exports = {
     'plugin:vue/vue3-essential',
     '@vue/standard',
     '@vue/typescript/recommended'
+    // '@vue/prettier',
+    // '@vue/prettier/@typescript-eslint',
+    // 'plugin:prettier/recommended'
   ],
   parserOptions: {
     ecmaVersion: 2020
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'space-before-function-paren': 'off',
+    'vue/multi-word-component-names': 'off',
+    '@typescript-eslint/no-var-requires': 'off'
   }
 }
